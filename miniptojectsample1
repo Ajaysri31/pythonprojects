@@ -1,0 +1,75 @@
+def foodorder():
+
+    print("""FOOD MENU
+           1.DOSA price:15
+           2.IDLI price:10
+           3.POORI price:30
+           4.CHAPPATI price:20""")
+    food=int(input("enter the no.of food :"))
+    if food==1:
+        quantity=int(input("enter the quantity :"))
+        price=15
+        print("total :",quantity*price)
+    elif food==2:
+        quantity=int(input("enter the quantity :"))
+        price=10
+        print("total :",quantity*price)
+    elif food==3:
+        quantity=int(input("enter the quantity :"))
+        price=30
+        print("total :",quantity*price)
+    elif food==4:
+        quantity=int(input("enter the quantity :"))
+        price=20
+        print("total :",quantity*price)
+ 
+
+def calculator():
+    print("""====CALCULATOR====
+           1.ADDITION
+           2.SUBRACTION
+           3.MULTIPLICATION
+           4.DIVISION""")
+    
+    operation=int(input("enter the no.of operation :"))
+    a=int(input("enter a 1st value :"))
+    b=int(input("enter a 2nd value :"))
+
+    if operation==1:
+        print("addition of given number :",a+b)
+    if operation==2:
+        print("subtraction of given number :",a-b)
+    if operation==3:
+        print("multiplication of given number :",a*b)
+    if operation==4:
+        print("division of given number :",a/b)
+ 
+
+
+while True:
+    print("""====CALCULATOR====
+           1. place food order
+           2.calculator
+           3.exit""")
+    choice=int(input("enter your choice :"))
+    if choice==1:
+        foodorder()
+    elif choice==2:
+        calculator()
+    elif choice==3:
+        print("thank you for visiting smart food corner!")
+        break
+    else:
+        print("invalid choice! please select 1, 2 or 3.")
+
+
+
+
+
+
+
+
+
+
+
+ 
